@@ -1,24 +1,19 @@
 const trabajitos = [
     {
-        photo: "https://picsum.photos/id/237/400/300",
+        photo: "https://catadunsmore.github.io/clase-previa-a-la-prueba/foto-1",
         title: "Súper dibujo",
         description: "Trabajo de Configuración Visual I, con Prof. Ampuero."
     },
     {
-        photo: "https://picsum.photos/id/84/400/300",
+        photo: "https://catadunsmore.github.io/clase-previa-a-la-prueba/foto-2",
         title: "Mejor dibujo",
         description: "Trabajo de Configuración Visual I, con Prof. Perea."
     },
     {
-        photo: "https://picsum.photos/id/96/400/300",
+        photo: "https://catadunsmore.github.io/clase-previa-a-la-prueba/foto-3",
         title: "Otro dibujo",
         description: "Trabajo de Configuración Visual I, con Prof. Pradenas."
-    },
-    {
-        photo: "https://picsum.photos/id/104/400/300",
-        title: "Paremos de hacer dibujos",
-        description: "Trabajo de Configuración Visual I, con Prof. Otro."
-    }            
+    }  
 ]
 
 
