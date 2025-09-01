@@ -231,7 +231,7 @@ var otrxs = [];
 
 
 datos.forEach((x) => {
-    if (x.nombre == "Catalyna Dunsmore") {
+    if (x.nombre == "Vicente Medina") {
         yo = x;
     } else {
         otrxs.push(x);
@@ -258,11 +258,15 @@ function setup() {
     otrxs.forEach((x)=>{
         document.querySelector("#otredad").innerHTML += `<div><a href="${x.cuenta}"><img src="${x.foto}" title="${x.esperado}"></a></div>`;
     });
-    //Copy-paste, y arreglín
-    trabajitos.forEach((x)=>{
+    
+    //copy paste
+     trabajitos.forEach((x)=>{
         document.querySelector("#portafolio").innerHTML += `<div><img src="${x.photo}"><p>${x.title}</p></div>`;
     });
 
+    document.querySelector("#autoria").innerHTML = yo.nombre;
+    
+    
     //Ahora vuelvo al p5.js
     noStroke();
 }
@@ -275,20 +279,16 @@ function draw() {
     shininess(50);
     metalness(1);
 
-    // Ojo con el push()
+    // Add shapes.
     push();
     fill("red");
     translate(0, -valor / 4, -valor / 7);
     sphere(valor / 4);
     pop();
-    // Ojo con el pop()
-    // Ojo con el push()
     push();
     fill("blue");
     sphere(valor / 5);
     pop();
-    // Ojo con el pop()
-
 }
 
 function windowResized() {
