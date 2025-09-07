@@ -1,18 +1,18 @@
 const trabajitos = [
     {
         photo: "https://github.com/catadunsmore/clase-previa-a-la-prueba/blob/main/img/foto-1.webp?raw=true",
-        title: "Súper dibujo",
-        description: "Trabajo de Configuración Visual I, con Prof. Ampuero."
+        title: "Luminaria MuseoTaller",
+        description: "Proyecto III, Clarisa Menteguiaga",
     },
     {
         photo: "https://github.com/catadunsmore/clase-previa-a-la-prueba/blob/main/img/foto-2.webp?raw=true",
-        title: "Mejor dibujo",
-        description: "Trabajo de Configuración Visual I, con Prof. Perea."
+        title: "Objeto de luz",
+        description: "Proyecto II, Gabriela Pradenas",
     },
     {
         photo: "https://github.com/catadunsmore/clase-previa-a-la-prueba/blob/main/img/foto-3.webp?raw=true",
-        title: "Otro dibujo",
-        description: "Trabajo de Configuración Visual I, con Prof. Pradenas."
+        title: "Infografía protect the dolls",
+        description: "Proyecto III, Clarisa Menteguiaga",
     }  
 ]
 
