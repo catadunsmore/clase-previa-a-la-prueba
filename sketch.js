@@ -226,6 +226,7 @@ const datos = [
 ];
 
 
+
 var yo;
 var otrxs = [];
 
@@ -260,35 +261,115 @@ function setup() {
     });
     //Copy-paste, y arreglín
     trabajitos.forEach((x)=>{
-        document.querySelector("#portafolio").innerHTML += `<div><img src="${x.photo}"><p>${x.title}</p></div>`;
+        document.querySelector("#portafolio").innerHTML += `<div> <img src="${x.photo}"> <h3>${x.title}</h3> <p>${x.description}</p> </div>`;
     });
+
 
     //Ahora vuelvo al p5.js
     noStroke();
 }
 
 function draw() {
-    background("white");
+    background("#ffece7");
     orbitControl();
-    pointLight(255, 255, 255, valor / 3, valor / 2, 50);
+    pointLight(255, 255, 255, valor / 1, valor / 2, 70);
     specularMaterial(255);
-    shininess(50);
+    shininess(200);
     metalness(1);
+    ambientLight(200);
 
     // Ojo con el push()
+ 
     push();
-    fill("red");
-    translate(0, -valor / 4, -valor / 7);
+    fill("rgb(248, 199, 166)");
+    translate(0, 0, -5); 
     sphere(valor / 4);
     pop();
-    // Ojo con el pop()
-    // Ojo con el push()
+    
     push();
-    fill("blue");
-    sphere(valor / 5);
+    fill("rgb(224, 71, 55)");
+    translate(0, -130, -5);     //sombrero
+    cylinder(80, 100);
     pop();
-    // Ojo con el pop()
+    
+    push();
+    fill("rgb(224, 71, 55)");
+    translate(0, -80, -5);     //sombrero parte de abajo
+    cylinder(140, 30,);
+    pop();
+    
+    push();
+    fill("white");
+    translate(0, -100, -5);     //sombrero parte de abajo
+    cylinder(90, 30,);
+    pop();
+    
+    push();
+    fill("black");
+    translate(50,-10,120);  //lente derecho
+    torus(35,5);
+    pop();
+    
+     push();
+    fill("black");
+    translate(-50,-10,120);  //lente izquierdo
+    torus(35,5);
+    pop();
 
+    push();
+    fill("white");
+    rotate(95.8,[30,0,0]);
+    translate(50, 120,9);     //parte dentro del lente derecho
+    cylinder(35, 0,);
+    pop();
+    
+     push();
+    fill("white");
+    rotate(95.8,[30,0,0]);
+    translate(-50, 120,9);     //parte dentro del lente izquierdo
+    cylinder(35, 0,);
+    pop();
+    
+     
+    push();
+    fill("black");
+    translate(50,-10,110);
+    rotate (65,[60,0,0]);//ojo
+    torus(20,5);
+    pop();
+
+    push();
+    fill("black");
+    translate(-50,-10,110);
+    rotate (65,[60,0,0]);//ojo
+    torus(20,5);
+    pop();
+
+    push();
+    fill("black");
+    translate(0,-10,100);
+    rotate (55,[60,0,0]);  //lente parte del medio
+    torus(20,5);
+    pop();
+    
+     push();
+    fill("black");
+    translate(0,25,95);
+    rotate (60,[60,0,0]);  //boca
+    torus(40,5);
+    pop();
+    
+    push();
+    fill("pink");
+    translate(80,40,67);   //mejilla
+    sphere(25);
+    pop();
+    
+    push();
+    fill("pink");
+    translate(-80,40,67);   //mejilla
+    sphere(25);
+    pop();
 }
 
 function windowResized() {
