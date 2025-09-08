@@ -272,18 +272,17 @@ function setup() {
 function draw() {
     background("#ffece7");
     orbitControl();
-    pointLight(255, 255, 255, valor / 1, valor / 2, 70);
     specularMaterial(255);
-    shininess(200);
+    shininess(300);
     metalness(1);
-    ambientLight(200);
+    ambientLight(600);
 
     // Ojo con el push()
  
     push();
     fill("rgb(248, 199, 166)");
     translate(0, 0, -5); 
-    sphere(valor / 2.6);
+    sphere(120);
     pop();
     
     push();
