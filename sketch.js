@@ -369,6 +369,51 @@ function draw() {
     translate(-80,40,67);   //mejilla
     sphere(25);
     pop();
+
+      push();
+    fill("rgb(248, 199, 166)");
+    translate(-155,65,67);   //mano
+    sphere(35);
+    pop();
+    
+           push();
+    fill("rgb(248, 199, 166)");
+    rotate (12,[0,0,20]);
+    translate(-150, -80, 67);     //dedo1
+    cylinder(10, 50);
+    pop();
+    
+      push();
+    fill("rgb(248, 199, 166)");
+    rotate (16,[0,0,20]); 
+    translate(130, -50, 67);     //dedo2
+    cylinder(10, 50);
+    pop();
+ 
+           push();
+    fill("rgb(251, 217, 194)");
+    rotateX (35);
+    rotateZ(16);
+    translate(180, 50, -68);     //dedo3
+    cylinder(10, 50);
+    pop();
+    
+    
+           push();
+    fill("rgb(251, 217, 194)");
+    rotateX (35);
+    rotateZ(16);
+    translate(200, 50, -57);     //dedo3
+    cylinder(10, 50);
+    pop();
+    
+    push();
+    fill("rgb(251, 217, 194)");
+    rotateX (20);
+    rotateZ(20);
+    translate(50, 170, -20);     //dedo3
+    cylinder(10, 40);
+    pop();
 }
 
 function windowResized() {
